@@ -1,4 +1,4 @@
-![brain-matvis-d3](https://github.com/cabeen/brain-matvis-d3/raw/master/media/splash.jpg)
+![brain-matvis-d3](https://github.com/cabeen/brain-matvis-d3/raw/master/media/splash.png)
 
 # brain-matvis-d3
 
