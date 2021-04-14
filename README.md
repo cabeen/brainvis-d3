@@ -38,7 +38,8 @@ ISMRM, 21st Scientific Meeting and Exhibition (No. 2138).`
 
 ```
 @inproceedings{cabeen2013diffusion,
-  title={A diffusion MRI resource of 80 age-varied subjects with neuropsychological and demographic measures},
+  title={A diffusion MRI resource of 80 age-varied subjects 
+    with neuropsychological and demographic measures},
   author={Cabeen, Ryan P and Bastin, ME and Laidlaw, DH},
   booktitle={ISMRM, 21st Scientific Meeting and Exhibition},
   number={2138},
