@@ -2,12 +2,34 @@
 
 # brain-matvis-d3
 
-[http://cs.brown.edu/research/mri/mri_repository.html](http://cs.brown.edu/research/mri/mri_repository.html)
+This package shares code for web-based visualization of brain connectivity
+data, built using [D3.js](https://d3js.org), a Javascript library for
+interactive documents.  This should potentially work with any data that can be
+stored in a connectivity matrix or graph, that is, numerical measures defined
+for pairs of variables.  For example, this could be measures of structural
+integrity between brain regions, or it could be something else, like functional
+connectivity or statistical parameters from a group analysis.  Two different
+visualization approaches included here and illustrated above.  The first is a
+`chord` diagram that visualizes brain regions on a circle with interior chords
+that connect regions with coloring to denote connectivity strength.  The second
+is a matrix diagram that supports richer interaction, including querying
+individual values, adjusting colormaps, and including several
+parameters-of-interest. The `chord` diagram is ideal for sparse graphs, while
+the `matrix` is more useful for denser graphs.
 
-[GAAIN](https://www.gaaindata.org/partners/online.html)
+The code only requires a web-server, and you can find live examples running
+here:
+* [http://cabeen.io/brain-matvis-d3/chord/](http://cabeen.io/brain-matvis-d3/chord/)
+* [http://cabeen.io/brain-matvis-d3/matrix/](http://cabeen.io/brain-matvis-d3/matrix/)
 
-[https://www.gaaindata.org/partner/BEDM](https://www.gaaindata.org/partner/BEDM)
+The provided diagrams present data from a diffusion MRI study of normal aging
+adults.  You can learn more about the data from the [repository
+website](http://cs.brown.edu/research/mri/mri_repository.html) and you can
+request access through [GAAIN](https://www.gaaindata.org/partners/online.html)
+at the corresponding [GAAIN partners
+page](https://www.gaaindata.org/partner/BEDM).
 
+If you find this useful in your research, we kindly ask that you cite the following abstract, which you can find included in the `media` directory:
 
 `Cabeen, R.P., Bastin, M.E. and Laidlaw, D.H., 2013. A diffusion MRI resource
 of 80 age-varied subjects with neuropsychological and demographic measures. In
