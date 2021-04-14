@@ -27,7 +27,8 @@ adults.  You can learn more about the data from the [repository
 website](http://cs.brown.edu/research/mri/mri_repository.html) and you can
 request access through [GAAIN](https://www.gaaindata.org/partners/online.html)
 at the corresponding [GAAIN partners
-page](https://www.gaaindata.org/partner/BEDM).
+page](https://www.gaaindata.org/partner/BEDM).  To use your own data, you
+simply have to create JSON files that match the structure of the example.
 
 If you find this useful in your research, we kindly ask that you cite the following abstract, which you can find included in the `media` directory:
 
@@ -47,7 +48,7 @@ ISMRM, 21st Scientific Meeting and Exhibition (No. 2138).`
 
 ## Acknowledgements
 
-Author: Ryan Cabeen, cabeen@gmail.com
+Author: [Ryan Cabeen](https://cabeen.io), cabeen@gmail.com
 
 Data collection and analysis for this project was supported by NIH grant number
 R01 EB004155. The dissemintation of this work is supported by the CZI Imaging
