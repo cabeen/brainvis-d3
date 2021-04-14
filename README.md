@@ -1,10 +1,12 @@
-![brain-matvis-d3](https://github.com/cabeen/brain-matvis-d3/raw/master/media/splash.png)
+![brain-matvis-d3](https://github.com/cabeen/brain-matvis-d3/raw/main/media/splash.png)
 
 # brain-matvis-d3
 
 [http://cs.brown.edu/research/mri/mri_repository.html](http://cs.brown.edu/research/mri/mri_repository.html)
 
 [GAAIN](https://www.gaaindata.org/partners/online.html)
+
+[https://www.gaaindata.org/partner/BEDM](https://www.gaaindata.org/partner/BEDM)
 
 
 `Cabeen, R.P., Bastin, M.E. and Laidlaw, D.H., 2013. A diffusion MRI resource
