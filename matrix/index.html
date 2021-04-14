@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Connectome Viewer</title>
+    <link rel="stylesheet" href="lib/jquery/css/ui-lightness/jquery-ui-1.8.23.custom.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="lib/jquery/js/jquery-1.8.0.min.js"></script>
+    <script src="lib/jquery/js/jquery-ui-1.8.23.custom.min.js"></script>
+    <script src="lib/d3.v2.min.js"></script>
+    <script src="js/math.js"></script>
+    <script src="js/load.js"></script>
+    <script src="js/matrix.js"></script>
+</head>
+
+<body>
+
+<h1 id="title">Connectome Viewer</h1>
+    
+<script src="js/main.js"></script>
+
+<div id="tooltip"></div>
+<div id="plot"></div>
+
+<p>
+<div id="bounds"></div>
+</p>
+
+<p>
+Name: <select id="name"></select>
+Metric: <select id="metric"></select>
+Scale: <select id="scale"></select>
+</p>
+
+<p>
+This matrix diagram visualizes large-scale white matter connectivity in the human brain.
+The connectivity model was derived from magnetic resonance imaging (MRI) and
+tractography as follows.  First, A high-resolution
+<a href="http://en.wikipedia.org/wiki/Magnetic_resonance_imaging#T1-weighted_MRI">T1 MRI</a>
+was parcellated into gray matter regions using 
+<a href="http://surfer.nmr.mgh.harvard.edu/">Freesurfer</a>,
+then
+<a href="http://en.wikipedia.org/wiki/Tractography">streamline fiber tractography</a>
+was performed on a 
+<a href="http://en.wikipedia.org/wiki/Diffusion_MRI">diffusion MRI</a>.
+Next, fibers beginning and terminating near gray matter areas were
+mapped to pairs of regions from the
+<a href="http://surfer.nmr.mgh.harvard.edu/fswiki/CorticalParcellation">Desikan-Killany Atlas</a>,
+and a variety of metrics of connectivity
+strength were computed from combinations of fiber length and diffusion
+indices.  These metrics have been
+<a href="http://vis.cs.brown.edu/docs/pdf/g/Correia-2008-QTM.pdf.html">
+    found to be especially sensitive to white matter integrity
+</a>.
+This visualization includes the mean and variance of these connectivity metrics
+across a population of 80 normal subjects.
+</p>
+<p>
+Each colored cell represents the value of a connectivity metric between a pair
+of gray matter areas, where darkness of a cell is mapped according to the scale
+and the metric value.  Scales specify how the connectivity metrics map to cell
+color, and the scale can be selected in a list above.  Linear scales preserve
+relative differences between metric values but can wash out interesting details
+if there are outliers.  Using a logarithmic or exponential scale can give more
+emphasis to lower or high values, respectively.  By default, the minimum and
+maximum metric values are mapped to the lightest and darkest colors,
+respectively.  However, the slider above can be used to adjust the range of
+this mapping.  Scales that begin "inv" will reverse the orientation of the
+mapping (making smaller values darker and bigger values lighter).  Finally, a
+binary scale can be used to show the gross structure of the network by
+thresholding the data.
+</p>
+<p>
+The names of the gray matter regions are shown along the border, and
+hovering over a cell will show its corresponding metric value and connecting
+region names.  The cells may be reordered lexicographically by region name or
+numerically by the column sum, min or max of the connectivity metric.
+</p>
+
+<p>
+Built with <a href="http://d3js.org/">d3.js</a> and derived from <a
+href="http://bost.ocks.org/mike/miserables">this example</a>.
+</p>
+
+<footer>
+  <aside>July 2012</aside>
+  <a href="mailto:cabeen@cs.brown.edu" rel="author">Ryan Cabeen</a>
+</footer>
+</body>
+</html>

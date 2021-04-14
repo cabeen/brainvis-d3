@@ -1,0 +1,97 @@
+html {
+    min-width: 1040px;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    margin: 1em auto 1em 3em;
+    width: 960px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    margin: .3em 0 .1em 0;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+h1, h2 {
+    text-rendering: optimizeLegibility;
+}
+
+h2 a {
+    color: #ccc;
+    margin-left: -20px;
+    position: absolute;
+    width: 740px;
+}
+
+footer {
+    font-size: small;
+    margin-top: 8em;
+}
+
+header aside {
+    margin-top: 88px;
+}
+
+header aside, footer aside {
+   color: #636363;
+   text-align: right;
+}
+
+aside {
+    font-size: small;
+    margin-left: 780px;
+    position: absolute;
+    width: 180px;
+}
+
+body > p {
+    width: 720px;
+}
+
+li {
+    width: 680px;
+}
+
+a {
+    color: steelblue;
+}
+
+svg {
+    font: 10px sans-serif;
+}
+
+
+.background {
+    fill: #eee;
+}
+
+line {
+    stroke: #fff;
+}
+
+text.active {
+    fill: red;
+}
+
+.options {
+    display: inline;
+}
+
+#bounds {
+    width: 60%;
+}
+
+#tooltip {
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    padding: 10px;
+    background-color: white;
+}
